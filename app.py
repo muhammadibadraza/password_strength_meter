@@ -68,6 +68,7 @@ password = st.text_input("Enter your Password: ", type="password")
 #     st.error("Enter a Password")
 if password in com_pas:
     st.error("Please change the Password, your Password is too common.")
-else:
-# elif password != "":
-   check_password_strength(password)
+elif password == "":
+    st.write("")
+elif password != "":
+    check_password_strength(password)
